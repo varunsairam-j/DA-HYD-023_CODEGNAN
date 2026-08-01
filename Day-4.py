@@ -50,7 +50,7 @@ age = int(input("Enter Your Age:"))
 if age>18:
     print("You are Eligible to Vote")
 else:
-    print("Your Age is just:",age,"So, You are not Eligible to Vote")  
+    print(f"Your Age is : {age}. So, Your are not eligible to vote")  
 
 # In Output, We are getting space after age. ( I don't want that ) --> ( Your Age is just: 12 So, You are not Eligible to Vote )
 # So, There are methods for bringing output as we want 
@@ -64,8 +64,6 @@ TASK - Student Marks and Grade Analyzer
 >60 = Fail
 Also, -ve cases should not be allowed and marks shouldn't be greater than 100
 '''
-
-
 
 
 
