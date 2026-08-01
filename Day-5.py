@@ -88,15 +88,17 @@ print("His salary is %.1f"%(salary))  # Rounding to 1 decimal
 '''
 
 # .format() usage
-
+'''
 name = 'Varun'
 place = 'England'
 print("{} is in {}".format(name,place))  # Order matter
-
+'''
 # f string method
-
+'''
 print(f'{name} is in {place}')   
 print(f'{"Saketh"} is in {name}')
+'''
+
 
 
 
