@@ -1,5 +1,5 @@
 # Grade Checker
-s
+
 Marks = int(input("Enter your Marks:"))
 if Marks>0 and Marks<=100:
     if Marks>=90:
