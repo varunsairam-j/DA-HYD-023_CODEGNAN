@@ -53,12 +53,11 @@ names = ['Varun','Sai','Ram']
 for name in names:
     print(name)
 '''
-
 '''
 names = ['Varun','Sai','Ram']
 print(len(names))             # len(obj) --> return the number of items in a container. Output is 3 
 for name in names:
-    print(name[0])
+    print(name)
     print(f"Student Name is {name}")
     if name == "Sai":
         print(f"Student Name is {name}")
@@ -103,7 +102,7 @@ print(result)
 
 # Understand the loops usage with Fitness streak Example
 # Work_Out --> 1 , work_out_missed --> 0
-
+'''
 work_log = [0,1,1,1,0,1,0,1]
 #result variable --> longest_streak
 longest_streak = 0
@@ -114,14 +113,9 @@ for day in work_log:
         if current_streak > longest_streak:
             longest_streak = current_streak
     else:
-        current_streak = 0      #streak breaks
+        current_streak = 0                       #streak breaks
 print(f"longest_streak is {longest_streak}")
-            
-  
-
-
-
-
+'''
 
 
 
