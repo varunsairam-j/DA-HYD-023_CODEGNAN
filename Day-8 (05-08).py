@@ -28,6 +28,7 @@ print(name[0:50])   # Returns till the end of the String
 '''
 
 '''print(name[4:1])'''   # Return Empty String. Because, Strings are Immutable
+
 # Slicing is Applicable from Lower Index to Higher Index.
 '''
 name = "Varun"

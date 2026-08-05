@@ -91,7 +91,7 @@ while i<=10:
 '''
     
 # Banking Scenario --> PIN Authentication, if more than 3 attempts --> Account Locked
-
+'''
 pin ="3007"
 max_attempts = 3
 current_attempt = 0
@@ -105,7 +105,7 @@ while current_attempt < max_attempts:
         current_attempt = current_attempt + 1
 else:
     print("Max Attempts Reached, Try again Tomorrow")
-    
+'''
 
 
 
