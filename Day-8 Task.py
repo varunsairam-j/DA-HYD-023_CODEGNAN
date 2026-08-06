@@ -1,5 +1,5 @@
 # TASK --> Workout with all possibilities of slicing and striding on a example
-
+'''
 Name = "Varun Sai Ram"
 print(len(Name))
 
@@ -24,7 +24,7 @@ print(Name[::1])
 print(Name[::2])
 print(Name[::-1])
 print(Name[::-2])
-
+'''
 
 
 # TASK - A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
@@ -52,6 +52,7 @@ while i<=90:
 '''
 
 # Method-4:
+
 
 
 
