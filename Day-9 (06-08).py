@@ -67,7 +67,7 @@ for mail in email:
     print(mail.split("@")[1])
 '''
 
-# TASK - Movie Watchlist in a Line
+
 
 
 
