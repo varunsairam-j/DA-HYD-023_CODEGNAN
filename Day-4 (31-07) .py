@@ -50,11 +50,10 @@ age = int(input("Enter Your Age:"))
 if age>18:
     print("You are Eligible to Vote")
 else:
-<<<<<<< HEAD
     print(f"Your Age is : {age}. So, Your are not eligible to vote")  
 =======
     print(f"Your Age is just:{age}. So, You are not Eligible to Vote")  
->>>>>>> 1a865bac02d876612a53fed7c150d9465ac4d596
+
 
 # In Output, We are getting space after age. ( I don't want that ) --> ( Your Age is just: 12 So, You are not Eligible to Vote )
 # So, There are methods for bringing output as we want 

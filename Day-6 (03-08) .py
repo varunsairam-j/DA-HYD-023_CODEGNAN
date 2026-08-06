@@ -102,6 +102,10 @@ print(result)
 
 # Understand the loops usage with Fitness streak Example
 # Work_Out --> 1 , work_out_missed --> 0
+<<<<<<< HEAD:Day-6 (03-08) .py
+=======
+
+>>>>>>> 6d653915dee7bbb518aa50eb92046e224c4aa8b1:Day-6.py
 '''
 work_log = [0,1,1,1,0,1,0,1]
 #result variable --> longest_streak
@@ -115,7 +119,16 @@ for day in work_log:
     else:
         current_streak = 0                       #streak breaks
 print(f"longest_streak is {longest_streak}")
+<<<<<<< HEAD:Day-6 (03-08) .py
 '''
+=======
+'''        
+  
+
+
+
+
+>>>>>>> 6d653915dee7bbb518aa50eb92046e224c4aa8b1:Day-6.py
 
 
 

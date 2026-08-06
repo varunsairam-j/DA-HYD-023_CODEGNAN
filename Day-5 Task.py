@@ -1,5 +1,5 @@
-# Grade Checker
-s
+# Grade Checker (Grade and Remarks)
+
 Marks = int(input("Enter your Marks:"))
 if Marks>0 and Marks<=100:
     if Marks>=90:
@@ -45,7 +45,7 @@ elif A%2!=0:
 
 
 
-# Season Identifier
+# Season Identifier 
 
 A = int(input("Enter Month Number:"))
 if A>0 and A<=12:
@@ -59,6 +59,9 @@ if A>0 and A<=12:
         print("Season: Autumn")
 else:
     print("Invalid Month Entered")
+
+
+#--------------------------------------------------------------- TASK COMPLETEED -------------------------------------------------------------------------
     
 
 
