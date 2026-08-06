@@ -106,7 +106,7 @@ while current_attempt < max_attempts:
 else:
     print("Max Attempts Reached, Try again Tomorrow")
 '''
-
+# While Loop
 
 
 
