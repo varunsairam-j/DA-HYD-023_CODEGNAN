@@ -51,7 +51,6 @@ while i<=90:
     i =i+1
 '''
 
-# Method-4:
 
 
 
