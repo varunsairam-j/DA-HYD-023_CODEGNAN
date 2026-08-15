@@ -104,6 +104,7 @@ if 'John' in Names:
 
 Names.discard('David')
 
+print("Final Names in the List:")
 for names in Names:
     print(names)
 
