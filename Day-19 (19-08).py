@@ -82,10 +82,9 @@ for i in b:
 
 '''
 
-
 # Keyword Variable length arguments --> we can pass any number of keyword arguments. we use ** representation
 
-
+'''
 def details (**kwargs):
     """Usage of **kwargs demo"""
     print(kwargs)
@@ -99,10 +98,10 @@ details(name='codegnan',place='hyd',batch='da')
 batch = {'number':'da23','place':'hyd'}
 details(**batch)
 
-
+'''
 
 # Now let us include both of them into a function
-'
+'''
 def sample(*a,**b):
     """Usage of both Variable length and keyword variable length argument"""
     result = 0
