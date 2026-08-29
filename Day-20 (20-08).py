@@ -180,12 +180,13 @@ outer()
 
 # Built-in Functions --> variables Built-in Scope
 
+'''
 len = 54
 print(len+4)
 
 print(len('codegnan'))          # TypeError --> Never Ever use Builtin Function as Identifiers
 
-
+'''
 
 
 
