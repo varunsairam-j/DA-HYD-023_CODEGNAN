@@ -209,5 +209,6 @@ obj.N_L()
 obj.L_8()
 
 
+# Inheritance, Super Method
 
 
