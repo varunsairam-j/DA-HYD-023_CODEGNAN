@@ -125,7 +125,7 @@ print(d)
 
 # Explanation of Strings
 
-
+# String Methods
 
 
 
