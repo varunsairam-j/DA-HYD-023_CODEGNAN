@@ -189,8 +189,7 @@ print(len('codegnan'))          # TypeError --> Never Ever use Builtin Function 
 '''
 
 
-
-
+# Exception Handling, Scope of Variables
 
 
 
