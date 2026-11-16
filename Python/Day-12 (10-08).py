@@ -155,7 +155,7 @@ print("Hai".rjust(6,"#"))     # Adjusts string to right and adds '#' in remainin
 
 
 
-
+# Strings
 
 
 
