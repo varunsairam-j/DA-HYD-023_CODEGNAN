@@ -86,7 +86,7 @@ print(b)
 # Identity Operators --> id() - gives where it is stores --> is, is not
 
 
-# Data Types & Operators
+# Explanation of Data Types & Operators
 
 
 

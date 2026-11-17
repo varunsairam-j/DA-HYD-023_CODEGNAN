@@ -52,8 +52,7 @@ while i<=90:
     
 '''
 
-# Day-08
-# Task on Strings
+# Day-08 - Task on Strings
 
 
     

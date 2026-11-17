@@ -118,8 +118,7 @@ for day in work_log:
 print(f"longest_streak is {longest_streak}")
 '''
 
-
-# For Loop
+# Explanation of For Loop
 
 
 
