@@ -1,4 +1,4 @@
-\# Data Analytics Learning Journey
+# Data Analytics Learning Journey
 
 
 
@@ -14,11 +14,11 @@ The objective is to strengthen my technical knowledge through consistent learnin
 
 
 
-\## Learning Modules
+## Learning Modules
 
 
 
-\### 1. Python
+### 1. Python
 
 Learning programming fundamentals and problem-solving using Python.
 
@@ -26,21 +26,21 @@ Learning programming fundamentals and problem-solving using Python.
 
 Topics include:
 
-\- Variables and Data Types
+- Variables and Data Types
 
-\- Conditional Statements and Loops
+- Conditional Statements and Loops
 
-\- Strings and Collections
+- Strings and Collections
 
-\- Functions and Modules
+- Functions and Modules
 
-\- Object-Oriented Programming (OOP)
+- Object-Oriented Programming (OOP)
 
-\- Exception Handling
+- Exception Handling
 
 
 
-\### 2. SQL
+### 2. SQL
 
 Learning relational database concepts and querying data using SQL.
 
@@ -48,21 +48,21 @@ Learning relational database concepts and querying data using SQL.
 
 Topics include:
 
-\- Database and Table Management
+- Database and Table Management
 
-\- SQL Constraints and Data Types
+- SQL Constraints and Data Types
 
-\- Data Manipulation and Retrieval
+- Data Manipulation and Retrieval
 
-\- Joins and Subqueries
+- Joins and Subqueries
 
-\- Aggregate and Window Functions
+- Aggregate and Window Functions
 
-\- Views and Stored Procedures
+- Views and Stored Procedures
 
 
 
-\### 3. Excel
+### 3. Excel
 
 Learning spreadsheet operations and data analysis using Microsoft Excel.
 
@@ -70,21 +70,21 @@ Learning spreadsheet operations and data analysis using Microsoft Excel.
 
 Topics include:
 
-\- Excel Fundamentals
+- Excel Fundamentals
 
-\- Formulas and Functions
+- Formulas and Functions
 
-\- Statistical Functions
+- Statistical Functions
 
-\- Logical and Lookup Functions
+- Logical and Lookup Functions
 
-\- Data Validation and Conditional Formatting
+- Data Validation and Conditional Formatting
 
-\- Charts and Data Visualization
+- Charts and Data Visualization
 
 
 
-\### 4. Data Analytics
+### 4. Data Analytics
 
 Learning the concepts and techniques involved in analyzing data and extracting meaningful insights.
 
@@ -92,23 +92,23 @@ Learning the concepts and techniques involved in analyzing data and extracting m
 
 Topics include:
 
-\- Data Analytics Fundamentals
+- Data Analytics Fundamentals
 
-\- Data Cleaning and Preprocessing
+- Data Cleaning and Preprocessing
 
-\- Exploratory Data Analysis (EDA)
+- Exploratory Data Analysis (EDA)
 
-\- Descriptive Statistics
+- Descriptive Statistics
 
-\- Data Manipulation using Pandas
+- Data Manipulation using Pandas
 
-\- Numerical Computing using NumPy
+- Numerical Computing using NumPy
 
-\- Data Interpretation and Insights
+- Data Interpretation and Insights
 
 
 
-\### 5. Power BI
+### 5. Power BI
 
 Learning business intelligence and data visualization using Microsoft Power BI.
 
@@ -116,19 +116,19 @@ Learning business intelligence and data visualization using Microsoft Power BI.
 
 Topics include:
 
-\- Data Import and Transformation
+- Data Import and Transformation
 
-\- Power Query
+- Power Query
 
-\- Data Modeling and Relationships
+- Data Modeling and Relationships
 
-\- DAX (Data Analysis Expressions)
+- DAX (Data Analysis Expressions)
 
-\- Reports and Interactive Dashboards
+- Reports and Interactive Dashboards
 
 
 
-\## Tools \& Technologies
+## Tools \& Technologies
 
 
 
@@ -136,7 +136,7 @@ Python | MySQL | Microsoft Excel | Power BI | Pandas | NumPy | Git | GitHub
 
 
 
-\## Objective
+## Objective
 
 
 
@@ -144,9 +144,9 @@ To continuously improve my Data Analytics skills through practical implementatio
 
 
 
-\---
+---
 
 
 
-\*Learning, Practicing, and Growing Every Day.\*
+*Learning, Practicing, and Growing Every Day.*
 
