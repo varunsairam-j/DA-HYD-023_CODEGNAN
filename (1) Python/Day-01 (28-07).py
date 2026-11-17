@@ -21,7 +21,5 @@ print(name)
 print(location)
 print(age)
 
-
-# --> Explanation about Tokens
-
+# Introduction to Python
 # Tokens
