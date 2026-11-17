@@ -141,5 +141,5 @@ print(U1.get_password())
 
 '''
 
-# Encapsulation
+# Constructor, Encapsulation & Accessing Modifiers
 
