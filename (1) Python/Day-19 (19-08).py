@@ -122,7 +122,7 @@ sample(2,4,5,'police','codegnan',3.5,
 # sample(name="codegnan",23,ids=23445)    # Positional args follows keyword args
 
 
-# Types of Arguments
+# Types of Arguments in Functions
 
 
 
