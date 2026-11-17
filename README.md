@@ -148,5 +148,5 @@ To continuously improve my Data Analytics skills through practical implementatio
 
 
 
-\*Learning, Practicing, and Growing Every Day.\*
+*Learning, Practicing, and Growing Every Day.*
 
