@@ -1,0 +1,900 @@
+SQL  --> Structured Query Language
+-----------------------------------------------
+-> It is a language used to communicate with databases.
+-> SQL is a language used to communicate with and manage data in relational databases.
+-> SQL is specifically designed for working with relational databases.
+
+=> MySQL / PostgreSQL / Oracle / SQL Server  -->  database systems that use SQL
+
+--> A database is an organized collection of data.
+--> A table is where data is actually organized into rows and columns.
+
+--> A query is simply a request/instruction that you give to a database to get information or perform some operation.
+
+=> DATA ( Raw Data )     -->     PROCESSING     -->     INFORMATION  ( Processed and Meaningful Data )
+
+=> Types of Data : 3 Types
+  
+--> 1. Structured Data  --> organized into rows and columns --> stored in relational databases such as MySQL, Oracle, and PostgreSQL.
+--> 2. Unstructured Data --> doesn't have a predefined tabular format --> Stored in NoSQL databases like MongoDB, Cassandra.
+--> 3. Semi Structured Data --> XML files, JSON data
+
+File Management System :
+----------------------------------
+* Software provided by the operating system for creating, storing, retrieving, updating, and deleting files.
+* Operations are done manually or through application code.
+
+--> Key Functions of FMS:
+----------------------------------
+* File Creation & Deletion --> Create a File, Delete a File
+* File Access & Retrieval --> Read Data, Data  --> Sequential access, Direct access, Indexed access.
+* File Organization --> Sequential files, Indexed files, Hashed files
+* File Manipulation --> Insert, update, delete, or append data inside files.
+* File Sharing and Protection --> The system can control permissions such as: Read, Write, Execute
+* Backup & Recovery --> You can make copies of files and restore them after a failure.
+
+--> Drawbacks of FMS:
+-------------------------------
+* Data Redundancy --> Unnecessary duplication of data.
+* Data Inconsistency --> If one file is updated but another copy is not, data becomes inconsistent.
+* Poor Data Security --> Security is only at file-level.
+* Limited Data Sharing --> Multiple users accessing the same file at the same time may cause conflicts.
+* No Data Relationships --> like Primary key & Foreign key.
+* Difficult Backup & Recovery --> Recovery after failure is hard.
+* Lack of Query Language --> Every operation needs custom program logic.
+* Scalability Issues --> Managing huge datasets using ordinary files becomes increasingly difficult and inefficient.
+
+DBMS :
+--------------
+--> Database = A database is an organized collection of data that can be stored, accessed, and managed efficiently.
+--> Management System = A way to control, monitor and use something effectively.
+
+* DBMS is a software that allows users to create, store, manage, and retrieve data from a database efficiently and securely. 
+* DBMS is software that helps us manage databases.
+
+* Data - Record - Table - Database
+
+* Types of DBMS : 
+--> Relational DBMS (RDBMS)
+--> NoSQL DBMS
+--> Hierarchical / Network DBMS
+
+* Data Models --> It is a way of organizing data in a database. It defines how data is stored, connected and manipulated.
+
+Types of Data Models  --> Hierarchical Data Model
+										  --> Network Data Model
+										  --> Relational Data Model
+										  --> Object Oriented Data Model
+
+=> Sub Languages : 5 Types --> DDL, DML, DQL, DCL, TCL
+-------------------------------------------------------------------------
+--> DDL - (Data Definition Language) 
+----------------------------------------------
+-> CREATE
+-> ALTER
+-> DROP
+-> TRUNCATE
+-> RENAME
+
+
+--> DML - (Data Manipulation Language)
+---------------------------------------------------
+-> INSERT
+-> UPDATE
+-> DELETE
+
+
+--> DQL - (Data Query Language)
+---------------------------------------------
+-> SELECT
+
+
+--> DCL - (Data Control Language)
+---------------------------------------------
+ -> GRANT
+ -> REVOKE
+
+
+--> TCL - (Transaction Control Language)
+-----------------------------------------------------
+-> COMMIT
+-> ROLLBACK
+-> SAVEPOINT
+
+	
+Data Types :
+------------------
+--> Numeric Data Types -->  INT   --> upto 2 Billion (10 digits)
+					    -->  BIGINT   --> upto 9 Quintillion (19 digits)
+					    -->  DECIMAL (digits,decimal) --> limits
+					    -->  FLOAT / DOUBLE --> Approximate Values & No Limits
+					    -->  BOOLEAN  --> True / False --> Stores as 0 or 1.
+											 
+--> String Data Types  -->  CHAR(n)  --> Fixed Length
+					-->  VARCHAR(n)  --> Variable Length
+					-->  TEXT  --> (up to 65,535 chars) 
+					-->  ENUM  -->  One value from a predefined list.
+										  
+--> Date/Time Data Types -->  DATE (YYYY-MM-DD)
+						-->  TIME (HH-MM-SS)
+						-->  DATETIME 
+						-->  TIMESTAMP  --> Auto-updates with current time
+												 
+
+Creating a Table :
+--------------------------
+--> CREATE TABLE is used to create a table
+
+CREATE TABLE table_name (
+    column_name data_type constraints,
+    ...
+);
+
+
+Altering a Table : [ Add, Modify, Rename, Drop - Columns | Rename a Table ]
+-------------------------------------------------------------------------------------------------
+--> ALTER TABLE is used to change the table structure after creation.
+
+--> To ADD a Column :
+------------------------------
+ALTER TABLE table_name ADD COLUMN column_name data_type constraint,....;
+
+--> To Modify a Column :
+---------------------------------
+ALTER TABLE table_name MODIFY COLUMN column_name data_type constrain,....;
+
+--> To Rename a Column :
+----------------------------------
+ALTER TABLE table_name CHANGE COLUMN column_name new_column_name data_type;
+
+--> To Drop a Column :
+------------------------------
+ALTER TABLE table_name DROP COLUMN column_name;
+
+--> Rename a Table :
+-----------------------------
+ALTER TABLE table_name RENAME TO new_table_name;
+
+
+Dropping a Table :
+--------------------------
+DROP TABLE table_name;
+Safe way to avoid Errors if Table doesn't exist --> DROP TABLE IF EXISTS table_name;
+
+6 Types of Constraints  --> Unique
+					 --> Not Null
+					 --> Primary key
+					 --> Foreign key
+					 --> Default
+					 --> Check
+											  
+--> Column Level Constraint :
+--------------------------------------
+CREATE TABLE table_name ( column_name data_type constraint, column_name data_type constraint );
+
+--> Table Level Constraint :
+-----------------------------------
+CREATE TABLE table_name ( column_name data_type, column_name data_type, Constraint (column_name), Constraint (column_name) );
+
+--> Auto Increment : Generates Integers with Increment.
+
+--> last_insert_id();  --> Returns last Auto_Increment Value for the last insert.
+
+--> Add, Drop Primary Key  --> ALTER TABLE table_name ADD PRIMARY KEY (column_name)
+						 --> ALTER TABLE table_name DROP PRIMARY KEY
+
+--> Add, Drop Unique  --> ALTER TABLE table_name ADD CONSTRAINT constraint_name UNIQUE(column_name);
+					 -->  ALTER TABLE table_name DROP CONSTRAINT constraint_name;
+										 
+--> Add, Drop Check  --> ALTER TABLE table_name ADD CONSTRAINT constraint_name CHECK (column_name with condition);
+				       --> ALTER TABLE table_name DROP CONSTRAINT constraint_name;
+										
+--> Add, Drop Not Null  -->  ALTER TABLE table_name MODIFY COLUMN column_name datatype NOT NULL;								
+					   -->   ALTER TABLE table_name MODIFY COLUMN column_name data_type;
+											
+--> Add, Drop Default  --> ALTER TABLE table_name MODIFY column_name data_type DEFAULT value;
+					 --> ALTER TABLE table_name MODIFY column_name data_type;
+										  
+--> Foreign key     --> CREATE TABLE tab_name (col_name data_type,....,FOREIGN KEY(col_name) REFERENCES tab_name(col_name));
+
+--> Add, Drop Foreign key   --> ALTER TABLE table_name ADD CONSTRAINT constraint_name 
+							 FOREIGN KEY(column_name) REFERENCES table_name(column_name);
+															
+						  --> ALTER TABLE table_name DROP CONSTRAINT constraint_name;
+													
+--> If we know the Order of Column Names    --> INSERT INTO table_name VALUES (val_1, val_2,......);
+
+--> To Copy Structure of Table from Another Table 	 --> CREATE TABLE table_name LIKE existing_table_name;
+
+--> To copy rows from another table   -->  INSERT INTO table_name SELECT * FROM another_table_name;
+																														(or)
+																	 -->  INSERT INTO table_name (col_names(s)) SELECT col_name(s) FROM another_table_name;
+																	 
+--> To Create a Table from Existing Table   --> CREATE TABLE table_name AS SELECT * FROM TABLE_NAME;	
+																														(or)
+																		--> CREATE TABLE table_name AS SELECT col_name(s) from table_name;
+																		
+Operators :
+----------------																		
+--> Arithmetic Operators  --> (+) (-) (*) (/) (%) (//) (**)
+--> Relational or Comparison Operators --> (>) (<) (=) (>=) (<=) and (!=) or (<>) 
+--> Logical Operators --> and, or, not 
+--> Special Operators
+
+WHERE clause : 
+----------------------
+Used to Filter Rows using a Condition.
+--> SELECT * FROM table_name WHERE condition;
+
+UPDATE :
+---------
+Used to Change data in a Table.
+--> UPDATE table_name SET condition; 
+--> UPDATE table_name SET condition WHERE condition;
+
+DELETE :
+---------
+Used to delete Data/Rows in a Table.
+--> DELETE FROM table_name;
+
+TRUNCATE :
+-----------
+Removes total data from a Table.
+--> TRUNCATE TABLE table_name;
+
+DROP :
+-------
+--> DROP TABLE table_name;
+
+Special Operators :
+--------------------
+--> Between	 =   Range
+--> In	  =   One of Several Values
+--> Like   =   Pattern
+--> Is Null   =   Check for Null
+--> Exists   =   Check Whether Something exists 
+
+-> BETWEEN --> WHERE column_name BETWEEN ____ AND ____;
+					 --> WHERE column_name NOT BETWEEN ____ AND ____;
+					 
+Ex: SELECT emp_name FROM employees WHERE salary BETWEEN 30000 AND 50000;
+
+-> IN --> WHERE column_name IN ( __ OR __ OR __ );
+		  --> WHERE column_name NOT IN ( __ OR __ OR __ );
+		  
+Ex: SELECT emp_name FROM employees WHERE department IN ( 'it' OR 'hr' OR 'Finance' );
+
+-> LIKE --> % and _
+-->  %  = 0 characters or any number of characters.
+-->  _   =  only 1 character.
+
+->  IS NULL --> SELECT column_name FROM table_name WHERE column_name IS NULL;
+					   --> SELECT column_name FROM table_name WHERE column_name IS NOT NULL;
+
+-> EXISTS --> 
+
+=> PREDICATES  -->  BETWEEN, IN, LIKE
+
+=> Null Handling Functions :
+--------------------------------------
+1. ISNULL()  --> SELECT ISNULL(column_name) FROM table_name;
+--> If Value is Null = Returns 1.
+--> If Value is Not Null = Returns 0.
+
+2. IFNULL()  --> Replaces Null Values
+--> SELECT IFNULL(column_name,value) FROM table_name; 
+--> Replaces column_name's value (Null) with given Value.
+
+3. NULLIF()  --> If Values are Equal, Return Null
+--> SELECT IFNULL(column_name,value) FROM table_name; 
+--> If Both Values are Equal, Returns Null
+
+4. COALESCE()  --> Returns First Available Value
+--> SELECT COALESCE(column_name,column_name) FROM table_name
+--> Returns First Not Null Value 
+
+
+=> Aggregate Functions :
+--------------------------------
+Summarizes Multiple Rows and Returns a Single Value.
+--> max()
+--> min()
+--> sum()
+--> avg()
+--> count()
+
+--> SELECT MAX(column_name) FROM table_name;
+
+* We Cannot write a Colum Name beside a Aggregate Function.
+
+=> GROUP BY : 
+----------------------
+--> SELECT col_name_1,MAX(col_name_2) FROM table_name GROUP BY col_name_1
+
+=> HAVING :
+-------------------
+             ↓
+WHERE  → filters rows
+HAVING → filters groups
+
+Ex : 
+-------
+SELECT department, COUNT(*)
+FROM employees
+GROUP BY department
+HAVING COUNT(*) < 5;
+
+=> ORDER BY :
+----------------------
+Sorting.
+Ascending Order  -->  By Default
+Descending Order  -->  DESC
+
+=> DISTINCT :
+---------------------
+Remove duplicate results
+--> SELECT DISTINCT column_name FROM table_name;
+
+=> LIMIT :
+---------------
+LIMIT restricts how many rows appear in the result.
+
+Query Writing Order :
+----------------------------
+SELECT
+FROM
+WHERE
+GROUP BY
+HAVING
+ORDER BY
+LIMIT
+OFFSET
+
+Query Executing Order :
+-------------------------------
+FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY → LIMIT 
+
+
+FROM
+ ↓
+WHERE
+ ↓
+GROUP BY
+ ↓
+HAVING
+ ↓
+SELECT
+ ↓
+ORDER BY
+ ↓
+LIMIT
+
+Date Functions :
+---------------------
+--> NOW() = Returns Current Date & Time.
+--> CURDATE() = Returns Current Date Only.
+
+--> DATE(x) = Extracts Only Date.
+--> YEAR(x) = Extracts Only Year.
+--> MONTH(x) = Extracts Only Month Number.
+--> DAY(x) = Extracts Only Day Number.
+
+--> MONTHNAME(x) = Extracts Month Name.
+--> DAYNAME(x) = Extracts Name of the Day.
+--> DAYOFWEEK(x) = Returns the Number of the Day in week.
+
+--> DATEDIFF(x,y) = Gives Difference between two dates.
+
+--> DATE_ADD(date, INTERVAL number unit) = Returns the Date after Addition of days/Months/Years.
+
+--> DATE_SUB(date, INTERVAL number unit) = Returns the Date after Subtraction of days/Months/Years.
+
+--> STR_TO_DATE(string, format) = Converts the given string to date.
+%d		-		Represents Day
+%m		- 		Represents Month
+%M 	-      Represents Month Name.
+%Y 		- 		Represents Year (4 digits)
+%y 		- 		Represents Year (2 digits)
+
+--> DATE_FORMAT(date, format) = Converts the Date into Specific Format.
+
+Time Functions :
+----------------------
+--> CURDATE() = Returns Only Current time.
+--> HOUR(x) = Extracts Only Hours.
+--> MINUTE(x) = Extracts Only Minutes.
+--> SECOND(x) = Extracts Only Seconds.
+	
+--> SELECT VERSION();    --> Returns MySQL Version.
+
+
+Numeric Functions :
+---------------------------
+--> ABS(x) = Returns Absolute Value ( Removes -ve).   => ABS(-50) = 50  (or)  ABS(50.5) = 50.5
+--> CEIL(x) / CEILING(x) = Gives Immediate Large Integer Value.   => CEIL(11.2) = 12 (or) CEILING(-11.2) = -11
+--> FLOOR(x) = Gives Immediate Small Integer Value.   => FLOOR(15.8) = 15  (or)  FLOOR(-17.4) = -18
+
+--> SIGN(x) = Gives 1 for +ve Number, 0 for Zero, -1 for -ve Number.
+
+--> RAND() = Generate Random Number between 0 and 1.
+
+--> MOD(x,y) = Returns Reminder after dividing x with y.
+
+--> POWER(x,y) = Calculates x power y.
+
+--> SQRT(x) = Returns Square Root of x.
+
+--> GREATEST(x,y,z..........) = Returns Greatest Number between given Numbers.
+--> LEAST(x,y,z..........) = Returns Least Number between given Numbers.
+
+--> ROUND(x) = Rounds the Number x. upto y decimals.   => ROUND(42.5678, 2) = 42.6 (or) ROUND(1234,-3) = 1000
+
+
+String Functions :
+-----------------------
+--> LENGTH(x) = Returns No of Bytes for given argument.
+--> CHAR_LENGTH(x) = Returns Length of the String.
+
+--> CONCAT('x','y','z'); = Adds the Strings.
+--> CONCAT_WS(separator, string1, string2, ...); = Add the Strings with a Separator.
+
+--> TRIM('x') = Removes leading and trailing spaces from a string( First & Last ). Doesn't Remove Middle Spaces.
+--> LTRIM('x') = Removes Spaces on Left Side of the String.
+--> RTRIM('x') = Removes Spaces on right Side of the String.
+
+--> REVERSE('string') = Reverses the characters of a string.
+--> REPLACE(original_string, old_string, new_string); = Replaces the Specific String.
+
+--> UPPER() = Converts Every Character to Upper Case.
+--> LOWER() = Converts Every Character to Lower Case.
+
+--> SUBSTRING('string',num) = Returns the String from the given num position.   => SUBSTRING('Python',3) = thon
+
+--> LPAD(String, Length, Value) =  Fills the String with value on left side for given length.
+--> RPAD(String, Length, Value) = Fills the String with value on Right side for given length.
+
+--> INSTR(string, substring); = Finds the Position of the substring in the String.
+
+
+LIMIT :
+------------
+Restricts the number of rows returned by a SELECT query.
+
+OFFSET :
+--------------
+Skips a certain number of rows before returning the result.
+
+=> SET OPERATORS :
+------------------------------
+Used to combine the results of two or more SELECT statements.
+
+For set operators to work, the SELECT statements should have:
+--> The same number of columns.
+--> Compatible datatypes in corresponding columns.
+
+1) UNION = Combines All Rows ( Removes Duplicate Rows ).
+2) UNION ALL = Combines All Rows ( Keeps Duplicate Rows ).
+3) INTERSECT = Gives Commons Rows from Tables.
+4) EXCEPT = Gives Only Rows from first Table that are not present in Second Table.
+
+JOIN :
+---------
+Used to Connect related rows from different tables using a common column.
+--> A JOIN is a way of combining rows from two or more tables based on a relationship between them.
+
+INNER JOIN / JOIN :
+-----------------------------
+Returns only the rows where a match exists in both tables.
+--> A JOIN B ON A.id = B.id
+
+LEFT JOIN :
+------------------
+Gives all rows from the left table, whether they have a match or not.
+--> If No Match, Fills the Columns as Null.
+--> A LEFT JOIN B ON ...
+
+RIGHT JOIN :
+--------------------
+Gives all rows from the RIGHT table, whether they have a match or not.
+--> A RIGHT JOIN B ON ...
+
+FULL OUTER JOIN :
+----------------------------
+Gives Everything From Both Tables.
+LEFT JOIN - UNION - RIGHT JOIN.
+
+CROSS JOIN :
+--------------------
+Produces every possible combination of rows from the two tables.
+Cartesian Product of Tables.
+
+SELF JOIN :
+-----------------
+Joins a table with itself.
+SELF JOIN is used when rows in the same table have a relationship with other rows in that same table.
+
+EQUI JOIN :
+------------------
+A JOIN whose joining condition uses = is an Equi JOIN.
+
+NON-EQUI JOIN :
+-------------------------
+Non-Equi JOIN is a JOIN where the condition uses comparison operators such as:
+>    <    >=    <=    BETWEEN
+
+                                            JOIN
+               ┌──────────┴──────────┐
+               │                                                             │
+  Row-preservation                                     Condition
+               │                                                             │
+ INNER / LEFT / RIGHT                  EQUI / NON-EQUI
+
+
+NATURAL JOIN :
+-------------------------
+A NATURAL JOIN automatically joins two tables using columns that have the same name in both tables.
+SQL automatically finds columns with the same names and joins using them.
+
+--> If there are more Common Columns, NATURAL JOIN takes all Common Columns into consideration.
+
+SUB QUERIES :
+----------------------
+A query written inside another query, enclosed within parentheses.
+
+SINGLE ROW Sub-Query :
+-----------------------------------
+The Sub-queries return only a single value.
+
+MULTI ROW Sub-Query :
+---------------------------------
+The Sub-query that returns more than one row/value.
+--> IN = Used for Multi Values in Sub-queries. (check whether a value matches ANY value in a list.)
+--> ANY = Comparison is true for at least one.
+--> ALL =  Comparison is true for every returned value.
+
+NESTED Query :
+-----------------------
+A Query Having atleast 2 Sub-queries.
+
+CO-RELATED Sub-Query :
+-----------------------------------
+The subquery depends on the current row of the outer query.
+=> A Correlated Subquery is a subquery whose condition refers to a column/value from the current row of the outer query, 
+so the subquery depends on that outer row.
+
+
+VIEW :
+----------
+A saved SELECT query that we can use like a virtual table.
+--> Simplifies complex queries, Maintains security, Maintains readability
+
+SIMPLE VIEW :
+----------------------
+A Simple View is a View without Joins, Aggregate functions and Complex operations.
+
+COMPLEX VIEW :
+-------------------------
+A Complex View is a View with Joins, Aggregate functions and Complex operations.
+
+
+ (TCL) :
+-----------
+Transaction Control Language 
+Transaction = A group of SQL operations.
+* We may perform several SQL operations, and then decide whether to permanently save them or undo them.
+
+=> BEGIN --> Start Transaction
+
+COMMIT --> Save Changes Permanently.
+ROLL --> Undo the Operation.
+SAVEPOINT --> Acts as a Checkpoint.
+
+--> ROLLBACK can undo uncommitted transaction changes, but it does not undo changes that have already been committed
+
+ACID Properties :
+-----------------------
+A = ATOMICITY --> Atomicity means a transaction is treated as one complete unit.
+--> Either the whole transaction happens, or the transaction does not happen.
+
+C = CONSISTENCY --> Consistency means that a transaction should take the database from one valid state to another valid state.
+--> Consistency ensures that the transaction doesn't leave the database in an invalid state.
+
+I = ISOLATION --> Transactions should not improperly interfere with each other.
+--> When multiple transactions happen concurrently, 
+one transaction should not improperly interfere with or see the unfinished/intermediate work of another transaction.
+
+D = DURABILITY --> Durability = Once committed, the change stays.
+--> Once a transaction has been successfully committed, 
+its changes should remain saved, even if something like a system failure happens afterward.
+
+
+EXISTS :
+-------------
+EXISTS is used with a subquery to check whether the subquery returns at least one row.
+--> Returns TRUE if the Sub query returns atleast 1 row.
+--> Returns FALSE if the Sub query doesn't return atleast 1 row.
+
+NOT EXISTS :
+-------------------
+NON EXISTS is used with a subquery to check whether the subquery returns at least one row.
+--> Returns FALSE if the Sub query returns atleast 1 row.
+--> Returns TRUE if the Sub query doesn't return atleast 1 row.
+
+
+E-R Diagrams :
+--------------------
+Entity Relationship Diagrams. --> Visual representation of a database.
+
+=> Entity = A real-world thing that we want to represent/store data about in our database. [ Table Name ]
+--> Represented by a Rectangle. ▭
+
+=> Strong Entity = Entity containing Primary Key. ▭
+=> Weak Entity = A weak entity cannot be uniquely identified using only its own attributes and 
+								 depends on another entity for its identification/existence. --> Represented by a Double Rectangle.
+
+=> Entity instance = One particular thing. [ Rows ]
+
+=> Attributes = The Information/property that describes a entity. [ Column ]
+--> Represented by a Ellipse (Oval). 
+
+5 Types :
+------------
+1) Simple Attribute : A Simple Attribute cannot be divided into smaller meaningful parts.
+2) Composite Attribute : A Composite Attribute can be divided into smaller meaningful parts.
+
+3) Single Valued Attribute : A Single-Valued Attribute has only one value for each entity instance.
+4) Multi Valued Attribute : A Multi-Valued Attribute can have more than one value for a single entity instance.
+
+5) Key Attribute : A Key Attribute is an attribute that can uniquely identify an entity instance.
+--> A Key Attribute is represented by underlining the attribute.
+
+6) Derived Attribute : A Derived Attribute is an attribute whose value is calculated from another attribute (or other stored data).
+--> A Derived Attribute is represented by a dotted/dashed ellipse.
+
+Relationship :
+-------------------
+A Relationship represents the association between entities.
+--> Relationship is represented by a diamond. ◇
+
+4 Types :
+-------------
+1) One-to-One (1:1) --> One entity instance is related to only one instance of the other entity.
+2) One-to-Many (1:M) --> One entity instance can be related to many instances of another entity.
+3) Many-to-One (M:1) --> This is essentially the reverse direction of One-to-Many.
+4) Many-to-Many (M:M) --> Many instances of one entity can be related to many instances of another.
+
+
+Normalization :
+---------------------
+Organizing data into multiple related tables.
+Instead of storing everything together, we separate the information.
+
+Data Redundancy --> The same piece of information is unnecessarily stored multiple times.
+Redundancy = unnecessary repeated data.
+
+3 common anomalies that can happen because of poorly organized/redundant data: 
+--> Insertion = Cannot insert some information without having unrelated information.
+--> Update = Same information is stored in multiple rows, so changing it requires changing multiple places.
+--> Deletion = Deleting one piece of information accidentally causes us to lose other useful information.
+
+Normalization Rules :
+----------------------------
+Normal forms are rules that tables should satisfy to reduce redundancy and prevent data anomalies.
+
+=> 1 NF = Each cell should contain a single, atomic value — not a list or multiple values.
+One cell → One value
+
+COMPOSITE Key :
+------------------------
+A Composite Key is a key made up of two or more columns together that uniquely identifies a row.
+--> PRIMARY KEY (student_id, course_id)
+
+Functional Dependency :
+--------------------------------
+Partial Dependency = If a non-key column depends on only part of a Composite Key, it is called Partial Dependency.
+Transitive dependency = If a non-key attribute should not depend on another non-key attribute.
+2NF removes Partial Dependency.
+3NF removes Transitive Dependency.
+
+=> 2 NF = Every non-key attribute must depend on the entire Composite Key, not just a part of it.
+--> If a table doesn't satisfy 2NF because it has a partial dependency, 
+	   we decompose (split) the table into related tables so that the partial dependency is removed.
+
+=> 3 NF = Remove attributes that depend on another non-key attribute.
+
+Normalization = Organizing data so each piece of information is stored in the appropriate place, 
+								reducing unnecessary repetition and preventing anomalies.
+
+CANDIDATE Key : 
+-------------------------
+A Candidate Key is an attribute or a combination of attributes that can uniquely identify each row in a table.
+Candidate Keys = possible choices for Primary Key
+Primary Key = the Candidate Key we actually choose
+
+COMPOSITE CANDIDATE Key 
+
+STORED PROCEDURES :
+---------------------------------
+A named group of SQL statements stored inside MySQL. It is created once and can be executed whenever needed.
+(Like Functions in Python)
+
+Syntax :
+------------
+DELIMITER //
+
+CREATE PROCEDURE Procedure_name()
+BEGIN
+    SQL Statement(s);
+END //
+
+DELIMITER ;
+
+Explanation :
+-----------------
+DELIMITER = It's a MySQL client command that tells the client what marks the end of the whole procedure definition.
+
+IN Parameter = Allows us to send a value into the Stored Procedure when we call it.
+
+OUT Parameter = the procedure can put the result into a variable that we can use after the procedure finishes.
+
+INOUT Parameter = Take the existing value, work on it, and return the changed value.
+
+DECLARE --> To define Temporary Variables.
+
+DELETE PROCEDURE => DROP PROCEDURE procedure_name;
+
+To See List of Procedures --> SHOW PROCEDURE STATUS WHERE Db = DATABASE();
+
+To See the Query Inside Procedure => SHOW CREATE PROCEDURE procedure_name;
+
+IF 
+ELSE
+ELSEIF
+
+WHILE :
+------------
+WHILE condition DO
+    statements;
+END WHILE;
+
+
+REPEAT :
+-------------
+REPEAT
+    statements;
+UNTIL condition
+END REPEAT;
+
+
+LOOP :
+----------
+label_name: LOOP
+    statements;
+    IF condition THEN
+        LEAVE label_name;
+    END IF;
+END LOOP;
+
+
+ITERATE = Skip the rest of the current iteration and start the next iteration.
+
+
+WINDOW FUNCTIONS :
+--------------------------------
+Performs a calculation across a set of rows related to the current row without reducing the number of rows.
+
+Syntax :
+------------
+Function_Name() OVER(
+    PARTITION BY column
+    ORDER BY column
+)
+
+OVER : tells SQL : This is a Window Function. Define the window over which the calculation should happen.
+
+--> ROW_NUMBER() = Used to assign sequential numbers for each row.
+
+ROW_NUMBER() = assign numbers
+ORDER BY = decide the order in which numbers are assigned
+PARTITION BY = restart numbering separately for each group
+
+RANK() = If more than one row contains the same rank, it skips the next rank.
+
+DENSE_RANK() = If more than one row contains the same rank, it does not skip the next rank.
+
+LAG(col_name) = Returns the previous row value.
+
+LEAD(col_name) = returns Next Row Value.
+
+NTILE(n) = divides the rows into 'n' buckets/groups and assigns a bucket number to each row.
+
+
+CTE : Common Table Expression
+------------------------------------------
+First prepare a result → give that result a name → use the named result in your main query.
+
+A normal CTE is not a permanently stored table. It exists only for the SQL statement in which you define it.
+
+CTE = a named intermediate result that I can use while executing this particular SQL statement.
+
+Syntax :
+------------
+WITH cte_name AS (
+-- Query that produces the result
+)
+
+SELECT *
+FROM cte_name;
+
+
+Recursive CTE --> The CTE refers to itself.
+They're useful when data has a repeating or hierarchical relationship.
+
+--> Anchor Member => Anchor query → gives the starting row
+--> Recursive Member => Recursive query → uses the previous result to generate the next rows
+--> Stop => Stopping condition → eventually produces no more rows
+
+WITH RECURSIVE cte_name AS (
+
+    -- 1. START
+    anchor_query
+
+    UNION ALL
+
+    -- 2. REPEAT
+    recursive_query
+)
+SELECT *
+FROM cte_name;
+
+
+TRIGGERS :
+-----------------
+Trigger = Automatically execute some SQL when a specified event happens on a table.
+--> We can tell Sql - Whenever an employee's salary is updated, automatically record the old and new salary.
+
+=> Why we Use Triggers ? 
+1) Validation
+2) Auditing
+3) Automatic Values
+4) Related Database Actions
+
+Syntax :
+-----------
+
+CREATE TRIGGER trigger_name
+BEFORE | AFTER INSERT | UPDATE | DELETE
+ON table_name
+FOR EACH ROW
+BEGIN
+    -- SQL statements
+END;
+
+
+BEFORE → Prepare / Validate
+AFTER → Record / React
+
+INSERT 
+UPDATE 
+DELETE 
+
+A Trigger runs automatically when its configured event occurs. You don't execute it using CALL like a Stored Procedure.
+
+Syntax :
+------------
+CREATE TRIGGER trigger_name
+BEFORE INSERT
+ON employees
+FOR EACH ROW
+BEGIN
+    -- SQL statements
+END;
+
+
+
+
+
+
+
+
+
