@@ -48,7 +48,7 @@ obj.area()
 
 '''
 
-# We will make Rectangle aS Child Class
+# We will make Rectangle as Child Class
 
 '''
 class Square:
@@ -209,6 +209,6 @@ obj.N_L()
 obj.L_8()
 
 
-# Inheritance, Super Method
+# Inheritance, Super Method & Method Overriding
 
 
