@@ -125,7 +125,7 @@ obj.total_property()
 
 '''
 
-# Inheritance
+# Explanation of Inheritance 
 
 
 
