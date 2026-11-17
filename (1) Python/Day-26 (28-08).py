@@ -184,7 +184,7 @@ print(a.upload())
 
 '''
 
-# Class Methods, Abstraction
+# Class Method, Static Method & Abstraction
 
 
 
