@@ -67,7 +67,6 @@ for mail in email:
     print(mail.split("@")[1])
 '''
 
-# Practice on Loops
 # Loops Practice
 
 
