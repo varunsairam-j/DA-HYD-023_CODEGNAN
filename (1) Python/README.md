@@ -6,31 +6,31 @@ This folder contains my Python learning journey at Codegnan.
 
 
 
-\## Topics Covered
+## Topics Covered
 
 
 
-\- Python Fundamentals
+- Python Fundamentals
 
-\- Variables and Data Types
+- Variables and Data Types
 
-\- Operators and Conditional Statements
+- Operators and Conditional Statements
 
-\- Loops and Loop Practice
+- Loops and Loop Practice
 
-\- Strings and String Methods
+- Strings and String Methods
 
-\- Lists, Tuples, and Sets
+- Lists, Tuples, and Sets
 
-\- Dictionaries
+- Dictionaries
 
-\- Functions and Types of Arguments
+- Functions and Types of Arguments
 
-\- Exception Handling
+- Exception Handling
 
-\- Scope of Variables
+- Scope of Variables
 
-\- Object-Oriented Programming (OOP)
+- Object-Oriented Programming (OOP)
 
-\- Modules and Imports
+- Modules and Imports
 
