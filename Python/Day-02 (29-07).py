@@ -147,9 +147,6 @@ z = 100 + 20.6 + 9 + 5j + False
 print(z)
 '''
 
-# --> Explanation about Variables
-
-
 # Variables
 
 
