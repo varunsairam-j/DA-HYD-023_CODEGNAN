@@ -123,8 +123,6 @@ print(d)
 # Use Loops and Strings to return A-Z
 
 
-# Explanation of Strings
-
 # String Methods
 
 

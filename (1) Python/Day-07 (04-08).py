@@ -107,10 +107,6 @@ else:
     print("Max Attempts Reached, Try again Tomorrow")
 '''
 
-
-# Explanation of While Loop
-
-
 # While Loop
 
 
