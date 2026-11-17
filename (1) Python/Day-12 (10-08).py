@@ -1,4 +1,4 @@
-# Strings --> Caeconversions, Searching & Finding, String Testing methods, Replace, Space Removal
+# Strings --> Case conversions, Searching & Finding, String Testing methods, Replace, Space Removal
 
 # Searching, Finding, Replacing
 
@@ -155,7 +155,7 @@ print("Hai".rjust(6,"#"))     # Adjusts string to right and adds '#' in remainin
 
 
 
-# Strings
+# Strings & String Methods
 
 
 
