@@ -31,9 +31,7 @@ while Attempts<5:
 '''    
 
     
-
-
-# Practice on Loops
+# Loops Practice
 
 
 
