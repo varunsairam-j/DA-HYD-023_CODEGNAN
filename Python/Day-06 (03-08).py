@@ -119,9 +119,6 @@ print(f"longest_streak is {longest_streak}")
 '''
 
 
-# --> For loops explained
-
-
 # For Loop
 
 
