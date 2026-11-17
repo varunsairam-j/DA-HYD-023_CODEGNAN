@@ -100,10 +100,6 @@ print(f'{"Saketh"} is in {name}')
 '''
 
 
-# --> Explanation about If,Elif,Else
-
-
-
 # Output Formatting
 
 
