@@ -16,31 +16,18 @@ The objective is to develop practical skills in data manipulation, data cleaning
 
 ## Topics Covered
 
-
-
 | Notebook | Topics |
-
 |---|---|
-
 | Day-01 | Series |
-
 | Day-02 | DataFrame |
-
-| Day-03 | Importing \& Exporting Files |
-
-| Day-04 | Understanding Data \& Renaming Columns |
-
-| Day-05 | Creating, Deleting \& Converting Column Data Types; Replacing Values |
-
-| Day-06 | Data Filtering \& Indexing |
-
-| Day-07 | Handling Missing, Duplicate \& Inconsistent Data |
-
-| Day-08 | Map, Copy, Aggregation \& Grouping |
-
-| Day-09 | GroupBy, Merge, Join \& Concat |
-
-| Day-10 | Time Series \& Data Generation |
+| Day-03 | Importing & Exporting Files |
+| Day-04 | Understanding Data & Renaming Columns |
+| Day-05 | Creating, Deleting & Converting Column Data Types; Replacing Values |
+| Day-06 | Data Filtering & Indexing |
+| Day-07 | Handling Missing, Duplicate & Inconsistent Data |
+| Day-08 | Map, Copy, Aggregation & Grouping |
+| Day-09 | GroupBy, Merge, Join & Concat |
+| Day-10 | Time Series & Data Generation |
 
 
 
