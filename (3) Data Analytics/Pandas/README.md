@@ -1,8 +1,8 @@
-\# Pandas — Data Analysis \& Manipulation
+# Pandas — Data Analysis \& Manipulation
 
 
 
-\## Overview
+## Overview
 
 
 
@@ -14,7 +14,7 @@ The objective is to develop practical skills in data manipulation, data cleaning
 
 
 
-\## Topics Covered
+## Topics Covered
 
 
 
@@ -44,7 +44,7 @@ The objective is to develop practical skills in data manipulation, data cleaning
 
 
 
-\## Additional Learning Materials
+## Additional Learning Materials
 
 
 
@@ -52,61 +52,61 @@ This folder also includes:
 
 
 
-\- Complete Pandas notebook
+- Complete Pandas notebook
 
-\- Pandas assignments and practice exercises
+- Pandas assignments and practice exercises
 
-\- Pandas interview questions and quiz
+- Pandas interview questions and quiz
 
-\- Pandas reference notes
+- Pandas reference notes
 
-\- CSV, Excel and JSON datasets
+- CSV, Excel and JSON datasets
 
-\- SQLite database for practice
-
-
-
-\## Tools \& Technologies
+- SQLite database for practice
 
 
 
-\- Python
-
-\- Pandas
-
-\- NumPy
-
-\- Jupyter Notebook
-
-\- CSV, Excel, JSON
-
-\- SQLite
+## Tools \& Technologies
 
 
 
-\## Learning Objectives
+- Python
+
+- Pandas
+
+- NumPy
+
+- Jupyter Notebook
+
+- CSV, Excel, JSON
+
+- SQLite
 
 
 
-\- Understand Pandas Series and DataFrames.
-
-\- Import and export data from different file formats.
-
-\- Explore and manipulate structured datasets.
-
-\- Clean missing, duplicate, and inconsistent data.
-
-\- Perform filtering, indexing, grouping, and aggregation.
-
-\- Combine datasets using merge, join, and concat.
-
-\- Work with time-series data.
+## Learning Objectives
 
 
 
-\---
+- Understand Pandas Series and DataFrames.
+
+- Import and export data from different file formats.
+
+- Explore and manipulate structured datasets.
+
+- Clean missing, duplicate, and inconsistent data.
+
+- Perform filtering, indexing, grouping, and aggregation.
+
+- Combine datasets using merge, join, and concat.
+
+- Work with time-series data.
 
 
 
-\*\*Part of my Data Analytics Learning Journey at Codegnan.\*\*
+---
+
+
+
+**Part of my Data Analytics Learning Journey at Codegnan.**
 
