@@ -1,8 +1,8 @@
-\# NumPy — Learning \& Practice
+# NumPy — Learning \& Practice
 
 
 
-\## Overview
+## Overview
 
 
 
@@ -14,7 +14,7 @@ It includes daily Jupyter notebooks, practical exercises, datasets, and consolid
 
 
 
-\## Topics Covered
+## Topics Covered
 
 
 
@@ -38,7 +38,7 @@ It includes daily Jupyter notebooks, practical exercises, datasets, and consolid
 
 
 
-\## Additional Learning Materials
+## Additional Learning Materials
 
 
 
@@ -46,29 +46,29 @@ This folder also includes:
 
 
 
-\- \*\*Complete Numpy.ipynb\*\* — Consolidated NumPy notes and examples.
+- **Complete Numpy.ipynb** — Consolidated NumPy notes and examples.
 
-\- \*\*Numpy Practice.pdf\*\* — Practice questions and exercises.
+- **Numpy Practice.pdf** — Practice questions and exercises.
 
-\- \*\*Cricket\_Dataset.csv\*\* — Dataset for hands-on practice.
-
-
-
-\## Tools \& Technologies
+- **Cricket\_Dataset.csv** — Dataset for hands-on practice.
 
 
 
-\- Python
-
-\- NumPy
-
-\- Jupyter Notebook
-
-\- CSV Dataset
+## Tools & Technologies
 
 
 
-\## Learning Objective
+- Python
+
+- NumPy
+
+- Jupyter Notebook
+
+- CSV Dataset
+
+
+
+## Learning Objective
 
 
 
@@ -76,9 +76,9 @@ To develop a strong understanding of NumPy arrays and numerical operations, enab
 
 
 
-\---
+---
 
 
 
-\*Part of my 100-Day Data Analytics Learning Journey at Codegnan.\*
+*Part of my 100-Day Data Analytics Learning Journey at Codegnan.*
 
