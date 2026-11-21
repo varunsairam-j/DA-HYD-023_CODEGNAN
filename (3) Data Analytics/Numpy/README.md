@@ -16,24 +16,14 @@ It includes daily Jupyter notebooks, practical exercises, datasets, and consolid
 
 ## Topics Covered
 
-
-
 | Notebook | Topics |
-
 |---|---|
-
 | Day-01 | Creation of Arrays |
-
-| Day-02 | Identity Matrix \& Random Package |
-
-| Day-03 | Shuffle, Permutation, Array Reshaping \& Transpose |
-
-| Day-04 | Array Size, Data Types, Indexing \& Modification |
-
-| Day-05 | Insertion, Deletion, Mathematical \& Statistical Operations |
-
-| Day-06 | Statistical Operations, Concatenation \& Stacking |
-
+| Day-02 | Identity Matrix & Random Package |
+| Day-03 | Shuffle, Permutation, Array Reshaping & Transpose |
+| Day-04 | Array Size, Data Types, Indexing & Modification |
+| Day-05 | Insertion, Deletion, Mathematical & Statistical Operations |
+| Day-06 | Statistical Operations, Concatenation & Stacking |
 | Day-07 | Splitting NumPy Arrays |
 
 
